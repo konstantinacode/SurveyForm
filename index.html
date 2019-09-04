@@ -1,0 +1,93 @@
+<!--
+    CodePen URL:
+    https://codepen.io/KonstantinaCode/full/orEvvV
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Recycling Survey</h1>
+    <p id="description">Let's see how environmental conscious you are </p>
+    <form action="" id="survey-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 left">
+                    <label for="name" id="name-label">Name: <span>*</span> </label>
+                </div>
+                <div class="col-xs-8 right">
+                    <input type="text" id="name" placeholder="Enter your name..." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 left">
+                    <label for="email" id="email-label">E-mail: <span>*</span></label>
+                </div>
+                <div class="col-xs-8 right">
+                    <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 left">
+                    <label for="age" id="number-label">Age: </label>
+                </div>
+                <div class="col-xs-8 right">
+                    <input type="number" name="age" id="number" placeholder="28" min="15" max="99">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 left">
+                    <label for="gender">Gender: </label>
+                </div>
+                <div class="col-xs-8 right">
+                    <select name="gender" id="dropdown">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-xs-4 left">
+                    <label for="recycle">Do you recycle?</label>
+                </div>
+                <div class="col-xs-8 right">
+                    <input type="radio" name="recycle" value="recycle-yes"> Yes <br>
+                    <input type="radio" name="recycle" value="recycle-no"> No <br>
+                    <input type="radio" name="recycle" value="sometimes"> Sometimes
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 left">
+                    <label for="habits">Check your habits that are true:</label>
+                </div>
+                <div class="col-xs-8 right">
+                    <input type="checkbox" name="habit1" value="buying"> I don't buy products that are in a non-recycling backage <br>
+                    <input type="checkbox" name="habit2" value="plasticPags"> I use reusable bags <br>
+                    <input type="checkbox" name="habit3" value="wastes"> I always throw my recycle in a recycle bin even if there isn't nearby me <br>
+                    <input type="checkbox" name="habit4" value="nothing"> I don't do any of the above            
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 left">
+                    <label for="comments">Any comments?</label>
+                </div>
+                <div class="col-xs-8 right">
+                    <textarea name="comments" cols="30" rows="4" placeholder="Enter your comment here..."></textarea><br>
+                </div>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+            <div id="clr"></div>
+        </div>
+    </form>
+    <footer>
+        &copy; <a href="#">Matthaiou Konstantina</a>
+    </footer>
+</body>
+</html>
